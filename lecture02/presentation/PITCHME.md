@@ -1,129 +1,4 @@
 #HSLIDE
-# Java
-lecture 2
-## Basics
-
-#HSLIDE
-## Отметьтесь на портале
-https://atom.mail.ru/
-
-#HSLIDE
-### get ready
-```bash
-> git fetch upstream
-> git checkout -b lecture02 upstream/lecture02
-```
-
-#HSLIDE
-## About me
-<img src="lecture01/presentation/assets/img/me.jpg" alt="me" style="width: 220px; float: left;"/>  
-
-  alpieex@gmail.com  
-  [https://github.com/Al-p-i](https://github.com/Al-p-i)  
-
-- Java 6+ years
-- MailRu, Headhunter
-- Currently engineer at AliExpress.com
-
-**Люблю смотреть, как другие работают**  
-
-#HSLIDE
-### Agenda
-1. gradle
-1. Classes and objects
-1. Inheritance
-1. Interface and abstract class
-1. Enum
-1. Practice
-
-#HSLIDE
-### Gradle
-1. **[gradle]**
-1. Classes and objects  
-1. Inheritance
-1. Interface and Abstract class
-1. Enum
-1. Practice
-
-
-#HSLIDE
-## How gradlew works
-Our gradle project is multi-project  
-**settings.gradle** - which projects to build  
-**build.gradle** - how to build project  
-  
-you can use gradle on specific subproject:
-```bash
-./gradlew :lecture02:clean
-```
-
-
-#HSLIDE
-### gradlew clean build
-```bash
-> ./gradlew :lecture02:clean :lecture02:clean
-blah-blah
-BUILD SUCCESSFUL
-
-> java -jar lecture02/build/libs/lecture02-1.0-SNAPSHOT.jar 
-Hello, World!
-
-# jar listing
-> jar -tfv  lecture02/build/libs/lecture02-1.0-SNAPSHOT.jar
-...
-```
-
-#HSLIDE
-### gradlew jar
-**jar** - Java Archive (way to distribute project in one *executable*)
-to build **jar** with gradle
-```bash
-# build fat jar @see build.gradle in lecture02 submodule 
-> ./gradlew :lecture02:jar
-blah-blah
-BUILD SUCCESSFUL
-
-> java -jar lecture02/build/libs/lecture02-1.0-SNAPSHOT.jar 
-Hello, World!
-
-# jar listing
-> jar -tfv  lecture02/build/libs/lecture02-1.0-SNAPSHOT.jar
-...
-```
-
-
-#HSLIDE
-### gradlew jar
-To build fat jar @see lecture02/build.gradle
-```bash
-> ./gradlew :lecture02:jar
-> blah-blah
-> BUILD SUCCESSFUL
-
-> java -jar lecture02/build/libs/lecture02-1.0-SNAPSHOT.jar 
-> Hello, World!
-
-# jar listing
-> jar -tfv  lecture02/build/libs/lecture02-1.0-SNAPSHOT.jar
-```
-
-#HSLIDE
-### Classes and objects
-1. gradle
-1. **[Classes and objects]**  
-1. Inheritance
-1. Interface and Abstract class
-1. Enum
-1. Practice
-
-
-#HSLIDE 
-### Flashback
-- Java is **object-oriented**, **class-based**
-- Java has static strong typization 
-
-
-#HSLIDE
 ### Static strong typization
 - Static == compile time
     + \+ fast runtime
@@ -189,17 +64,6 @@ assertFalse(player instanceOf Player); // <-- OK
 assertThat(null, is(not(instanceOf(AnyClass.class)))); // <-- OK 
 ```
 
-#HSLIDE
-### quiz
-
-```java
-System.out.println(null == null);
-
-// 1. `false` in output
-// 2. `true`  in output
-// 3. NullPointerException
-```
-
 [Read more about `null`](http://javarevisited.blogspot.ru/2014/12/9-things-about-null-in-java.html)
 
 #HSLIDE
@@ -258,17 +122,6 @@ The default constructor is a no-argument constructor automatically generated **u
 [Read more in official docs](https://docs.oracle.com/javase/tutorial/java/javaOO/constructors.html)
 
 [Read more on Stackoverflow](http://stackoverflow.com/questions/4488716/java-default-constructor)
-
-
-#HSLIDE
-### Inheritance
-1. gradle
-1. Classes and objects  
-1. **[Inheritance]**
-1. Interface and Abstract class
-1. Enum
-1. Practice
-
 
 #HSLIDE
 ### Inheritance
@@ -639,16 +492,6 @@ Use immutable (**final**) where possible
 
 
 #HSLIDE
-### Interface and Abstract class
-1. gradle
-1. Classes and objects  
-1. Inheritance
-1. **[Interface and Abstract class]**
-1. Enum
-1. Practice
-
-
-#HSLIDE
 ### `interface` definition
 
 ```java
@@ -734,15 +577,6 @@ public class Englishman extends AbstractHuman {
 
 
 #HSLIDE
-1. gradle
-1. Classes and objects  
-1. Inheritance
-1. Interface and Abstract class
-1. **[Enum]**
-1. Practice
-
-
-#HSLIDE
 ### Enum
 ```java
 enum Gender {
@@ -815,50 +649,3 @@ Fundamental classes are in java.lang
 final class Message {
 }
 ```
-
-
-#HSLIDE
-### Agenda
-1. gradle
-1. Classes and objects
-1. Inheritance
-1. Interface and abstract class
-1. Enum
-1. Practice
-
-#HSLIDE
-### Practice
-@See ru.atom.geometry
-
-<img src="lecture02/presentation/assets/img/geometry.png" alt="geometry" style="width: 750px;"/>
-
-
-#HSLIDE
-### Practice 'what to do'
-1. Unignore 
-1. Pull-request from your repo /lecture02 to course repo /lecture02
-2. 2 Points
-    - remove `@Ignore` from `PointPointCollisionTest`
-    - all tests and checks should pass
-3. 3 Points more
-   - remove `@Ignore` from `BarBarCollisionTest` and `BarPointCollisionTest`
-   - all tests and checks should pass
-   
-
-#HSLIDE
-## Summary
-1. Java - object-oriented, class-based
-1. All code inside classes
-1. All classes inherited from Object
-1. No multiple inheritance, multiple interface implementations
-1. private, protected, *default*, access public modifiers
-1. overload, override
-1. equals() vs ==
-1. know how to create and run **jar**
-
-#HSLIDE
-**Оставьте обратную связь**
-(вам на почту придет анкета)  
-Ставьте класс!
-
-**Это важно!**
