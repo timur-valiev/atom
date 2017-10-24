@@ -601,6 +601,10 @@ List<Integer> ages2 = people.stream().map(p->p.getAge()).collect(Collectors.toLi
 ```
 
 #HSLIDE
+### Maven
+Project build and dependencies management.
+
+#HSLIDE
 ### Spring Framework
 
 1. Dependency Injection
