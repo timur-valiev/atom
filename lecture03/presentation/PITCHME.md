@@ -578,3 +578,23 @@ From official FAQ:
 #HSLIDE
 ### HashMap. Internals 
 <img src="lecture03/presentation/assets/img/hashmap.png" alt="exception" style="width: 750px;"/>
+
+#HSLIDE
+### Java8. Streams & Lamdas
+How it was before?
+```java
+        List<Person> people = Arrays.asList(new Person("a", 2), new Person("b", 3));
+
+        List<Integer> ages = new ArrayList<Integer>();
+        
+        for (Person p : people) {
+            ages.add(p.getAge());
+        }
+```
+Now
+```java
+        List<Person> people = Arrays.asList(new Person("a", 2), new Person("b", 3));
+       
+        List<Integer> ages2 = people.stream().map(Person::getAge).collect(Collectors.toList());
+```
+
