@@ -602,16 +602,19 @@ List<Integer> ages2 = people.stream().map(p->p.getAge()).collect(Collectors.toLi
 
 #HSLIDE
 ### Spring Framework
-Dependency Injection
-Aspect-Oriented Programming including Spring's declarative transaction management
-Spring MVC and Spring WebFlux web frameworks
-Foundational support for JDBC, JPA, JMS
-Much more…
+
+1. Dependency Injection
+2. Aspect-Oriented Programming including Spring's declarative transaction management
+3. Spring MVC and Spring WebFlux web frameworks
+4. Foundational support for JDBC, JPA, JMS
+5. Much more…
 
 #HSLIDE
 ### Spring Boot
 
-A framework to manage framework
+1. A framework to manage framework
+2. Starters
+
 <img src="http://i0.kym-cdn.com/photos/images/facebook/000/531/557/a88.jpg" alt="exception" style="width: 400px;"/>
 
 
