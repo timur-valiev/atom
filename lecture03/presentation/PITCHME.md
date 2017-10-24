@@ -295,10 +295,6 @@ Not enough capacity. Need (auto)resize.
 <img src="lecture03/presentation/assets/img/array10.png" alt="exception" style="width: 750px;"/>
 
 #HSLIDE
-### Quiz
-#### What is the difference between capacity and size in `ArrayList`?
-
-#HSLIDE
 ### ArrayList. Complexity
 
 |  contains  | add   | get   |  set  | remove | 
