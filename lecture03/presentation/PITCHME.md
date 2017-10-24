@@ -503,14 +503,6 @@ a.hashcode() is the same during object lifetime
 
 
 #HSLIDE
-### HashSet. Complexity
-
-|  contains  | add   | get   | remove | 
-|:----------:|:-----:|:-----:|:------:|
-| O(1)       | O(1)  |  O(1) |  O(1)  |
-
-
-#HSLIDE
 ### TreeSet
 The elements are ordered using their **Comparable** natural 
 ordering, or by **Comparator** provided at set creation time, 
@@ -532,24 +524,6 @@ public int compareTo(T o) {
 	return this.field – o.field;
 }
 ```
-
-
-#HSLIDE
-### compareTo & equals
-Any type of contract?
-```java
-a.equals(b) == true => a.compareTo(b) == 0
-``` 
-
-What about null?
-
-
-#HSLIDE
-### HashSet. Complexity
-
-|  contains  | add   | get   | remove | 
-|:----------:|:-----:|:-----:|:------:|
-| O(log(n))       | O(log(n))  |  O(log(n)) | O(log(n))  |
 
 
 #HSLIDE
@@ -597,22 +571,6 @@ From official FAQ:
 ### Notes
 1. HashSet is cutted HashMap
 1. TreeSet is cutted TreeMap 
-
-
-#HSLIDE
-### Complexity
-HashMap
-
-|  containsKey  | get   | put   | remove | 
-|:----------:|:-----:|:-----:|:------:|
-| O(1)       | O(1)  |  O(1) | O(1)  |
-
-
-TreeMap
-
-|  containsKey  | get   | put   | remove |
-|:----------:|:-----:|:-----:|:------:|
-| O(log(n))       | O(log(n))  |  O(log(n)) | O(log(n))  |
 
 [Read more](http://infotechgems.blogspot.ru/2011/11/java-collections-performance-time.html)
 
