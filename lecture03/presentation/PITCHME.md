@@ -600,3 +600,18 @@ Or
 List<Integer> ages2 = people.stream().map(p->p.getAge()).collect(Collectors.toList());
 ```
 
+#HSLIDE
+### Spring Framework
+Dependency Injection
+Aspect-Oriented Programming including Spring's declarative transaction management
+Spring MVC and Spring WebFlux web frameworks
+Foundational support for JDBC, JPA, JMS
+Much more…
+
+#HSLIDE
+### Spring Boot
+
+A framework to manage framework
+<img src="http://i0.kym-cdn.com/photos/images/facebook/000/531/557/a88.jpg" alt="exception" style="width: 400px;"/>
+
+
